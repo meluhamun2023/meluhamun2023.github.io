@@ -158,8 +158,9 @@ body{
     width: 70vw;
     height: 80vh;
     top: 120vh;
+    overflow-y: scroll;
     left: 15%;
-    background-color: rgba(100, 180, 0, 0.5);
+    background-color: #2b8526;
     border-radius: 6px;
     backdrop-filter: blur(6px);
     display: flex;
@@ -170,6 +171,7 @@ body{
 .lettercontent h3{
     width: 60%;
     display: flex;
+    color: #fff;
     margin-left: 5%;
 }
 
@@ -180,9 +182,38 @@ body{
     top: 5%;
 }
 
+.cttecontent{
+    display: block;
+    width: 40vw;
+    height: 115%;
+    margin: 0px;
+    margin-left: 30vw;
+    margin-top: 2%;
+    padding: 0px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.cttecontent img{
+    height: 100%;
+    margin-top: 0px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
 @media (max-width: 768px){
     *{
         overflow-x: hidden;
+    }
+
+    .cttecontent{
+        width: 90vw;
+        height: 73.5vh;
+        margin-left: 5vw;
     }
     .topcontainer{
         width: 100vw;
@@ -219,12 +250,17 @@ body{
     }
     .publicimg h1{
         width: 80vw;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         height: 50%;
         left: 10%;
     }
     #toptext{
         width: 80%;
         left: 10%;
+        text-align: center;
+        justify-content: center;
         position: absolute;
     }
 

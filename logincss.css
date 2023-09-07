@@ -29,7 +29,7 @@ body{
 
 .sidebackground h3{
     margin-top: 120px;
-    width: 85%;
+    width: 95%;
     position: absolute;
     margin-left: 50px;
     font-size: 25px;
@@ -90,21 +90,12 @@ body{
     justify-content: center;
 }
 
-#emailinput{
+#pincodeinput{
     width: 90%;
     margin: 0px 5%;
     height: 15%;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
     border-radius: 6px;
-}
-
-#scode{
-    width: 90%;
-    border-radius: 6px;
-    height: 15%;
-    margin: 5px 5%;
-    box-shadow: 1px 2px 6px rgba(0,0,0, 0.3);
-    display: none;
 }
 
 #submit{

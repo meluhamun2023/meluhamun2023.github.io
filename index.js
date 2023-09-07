@@ -73,3 +73,23 @@ gba.addEventListener("click",async function(){
 document.getElementById("ow").addEventListener("click",function(){
     window.location.href = "mainpage.html";
 })
+
+document.getElementById("sdga").addEventListener("click",function(){
+    window.location.href = "https://docs.google.com/forms/d/10BX5u26IkstEJEsU-21b2SdA7AsMUVMlG_3tapWbUjc";
+})
+
+document.getElementById("af").addEventListener("click",function(){
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdkYdb0Qcj3Z0klq-8d3m-x11oIGjwliwsYDhFfKQNL4QgV2w/viewform";
+})
+
+document.getElementById("tf").addEventListener("click",function(){
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdGNBnv8Oy5jQSD0jSya6yab4iIAonHPcV1Bm5uOKbxdLIDTQ/viewform";
+})
+
+document.getElementById("gmailbutton").addEventListener("click",function(){
+    window.location.href = "https://mail.google.com/mail/u/0/#inbox?compose=lqrsljbfLvDFVhTpqmRzbMntHSCLQBwDkcWjckTPbtpCmFwpxlWgHrZZxWKxQbCQPTDRVSlRHFPsMnczp";
+})
+
+document.getElementById("instabutton").addEventListener("click",function(){
+    window.location.href = "https://www.instagram.com/meluhamun2023/";
+})

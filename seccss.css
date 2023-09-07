@@ -1,9 +1,0 @@
-.sp{
-    justify-content: center;
-    display: flex;
-    width: 20vh;
-    flex-direction: column;
-    background-color: #dcdcdc;
-    position: absolute;
-    height: 20vh;
-}
