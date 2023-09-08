@@ -41,3 +41,12 @@ document.getElementById("home").addEventListener("click",function(){
         ctteclass[i].style.display = "none";
     }
 })
+
+document.getElementById("burgericon").addEventListener("click",function(){
+    const burgerclass = document.querySelector(".burgerframe");
+    if (burgerclass.style.display === "flex"){
+        burgerclass.style.display = "none"
+    }else{
+        burgerclass.style.display = "flex"
+    }
+})

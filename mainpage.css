@@ -130,7 +130,6 @@ body{
     display: flex;
     position: absolute;
     flex-direction: column;
-    backdrop-filter: blur(6px);
     top: 82%;
     left: 15%;
     height: 25vh;
@@ -155,22 +154,20 @@ body{
 }
 
 .lettercontent{
-    width: 80vw;
+    width: 85vw;
     height: 100vh;
     top: 125vh;
     overflow-y: scroll;
-    left: 10%;
+    left: 7.5%;
     background: none;
     display: flex;
     position: absolute;
 }
 
 .lettercontent h3{
-    width: 90%;
+    width: 100%;
     display: flex;
-    margin-top: 40%;
     color: #000;
-    margin-left: 5%;
 }
 
 .lettercontent img{
@@ -216,16 +213,27 @@ body{
     display: flex;
 }
 
+#burgericon{
+    display: none;
+    position: absolute;
+    z-index: 15;
+    width: 3vh;
+    height: 3vh;
+    top: 1.5%;
+    right: 10vw;
+}
+
 .burgerframe{
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.9);
     height: 35vh;
     justify-content: center;
+    transition: 0.2s;
     align-items: center;
     z-index: 10;
     position: absolute;
-    display: flex;
     flex-direction: column;
+    display: none;
 }
 
 .burgerframe button{
@@ -234,6 +242,7 @@ body{
     text-align: left;
     justify-content: left;
     margin: 10px 5px;
+    font-size: 150%;
     font-weight: 300px;
     background: none;
     border: none;
@@ -254,23 +263,30 @@ body{
         height: 5vh;
     }
     #logo{
-        margin-left: 10px;
+        margin-left: 10vw;
+    }
+
+    #atitle{
+        width: 80vw;
+        position: absolute;
+        height: 20vw;
+        top: 115vw;
+        left: 10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .burgerframe{
+        margin: 0;
+        justify-content: center;
     }
 
     .buttonlist{
-        left: 80px;
-        overflow-x: scroll !important;
-        width: 80vw;
-        text-decoration: none;
-        top: 5px;
+        display: none;
     }
 
-    .buttonlist button{
-        width: 25vw;
-        font-size: 85%;
-        align-items: center;
-        text-align: left;
-        justify-content: left;
+    #burgericon{
+        display: flex;
     }
 
     .bottombar{
@@ -280,19 +296,21 @@ body{
 
     .publicimg{
         width: 100vw;
-        height: 40vh;
+        height: 100vw;
     }
     .publicimg h1{
         width: 80vw;
         text-align: center;
         justify-content: center;
         align-items: center;
-        height: 50%;
+        height: 80vw;
         left: 10%;
     }
     #toptext{
-        width: 80%;
+        width: 80vw;
         left: 10%;
+        top: 15vw;
+        font-size: 150%;
         text-align: center;
         justify-content: center;
         position: absolute;
@@ -302,17 +320,13 @@ body{
         display: flex;
     }
 
-    .lettercontent{
-        width: 90vw;
-        left: 5%;
-        top: 105vh;
-    }
     .lettercontent h3{
         width: 100%;
     }
 
     .bottombar{
         width: 100vw;
+        align-items: center;
     }
 
     .bottombar h3{
@@ -325,17 +339,45 @@ body{
     }
 
     .bottombar img{
-        width: 40%;
+        width: 40vw;
         left: 58%;
-        height: 80%;
-        top: 10%;
+        height: 12vw;
     }
 
     .contentinfohome{
-        top: 48vh;
-        height: 50vh;
+        top: 125vw;
+        height: 110vw;
         width: 85vw;
         left: 7.5%;
+    }
+
+    .contentinfohome p{
+        width: 100%;
+        height: 100%;
+    }
+
+    .lettercontent{
+        width: 85vw;
+        left: 7.5vw;
+        height: 150vw;
+        top: 235vw;
+    }
+
+    .lettercontent img{
+        width: 100%;
+        left: 0;
+        height: 52.25vw;
+        border-radius: 6px;
+    }
+
+    .lettercontent p{
+        width: 100%;
+        position: absolute;
+        height: 45.75vw;
+        font-size: 100%;
+        top: 62.25vw;
+        bottom: 0%;
+        margin: 0;
     }
 
     #toptext{
@@ -356,8 +398,23 @@ body{
         position: absolute;
     }
 
+    #ltitle{
+        width: 80vw;
+        position: absolute;
+        height: 20vw;
+        top: 230vw;
+        left: 10%;
+        text-align: center;
+        justify-content: center;
+    }
     #bottomtext{
-        display: none;
+        width: 80vw;
+        height: 30vw;
+        font-size: 100%;
+        left: 10%;
+        top: 75vw;
+        text-align: center;
+        justify-content: center;
     }
 
     .contentinfohome h3{
