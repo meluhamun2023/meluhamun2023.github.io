@@ -359,7 +359,7 @@ body{
     .lettercontent{
         width: 85vw;
         left: 7.5vw;
-        height: 150vw;
+        height: 160vw;
         top: 235vw;
     }
 
@@ -373,7 +373,7 @@ body{
     .lettercontent p{
         width: 100%;
         position: absolute;
-        height: 45.75vw;
+        height: 45.75%;
         font-size: 100%;
         top: 62.25vw;
         bottom: 0%;
