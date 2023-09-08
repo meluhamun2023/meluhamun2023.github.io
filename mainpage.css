@@ -148,38 +148,49 @@ body{
 
 .contentinfohome h3{
     position: absolute;
+    font-weight: 5px;
     top: 20%;
-    font-size: 150%;
-    opacity: 0.7;
+    font-size: 130%;
     display: flex;
 }
 
 .lettercontent{
-    width: 70vw;
-    height: 80vh;
-    top: 120vh;
+    width: 80vw;
+    height: 100vh;
+    top: 125vh;
     overflow-y: scroll;
-    left: 15%;
-    background-color: #2b8526;
-    border-radius: 6px;
-    backdrop-filter: blur(6px);
+    left: 10%;
+    background: none;
     display: flex;
     position: absolute;
-    box-shadow: 0px 1px 6px #000;
 }
 
 .lettercontent h3{
-    width: 60%;
+    width: 90%;
     display: flex;
-    color: #fff;
+    margin-top: 40%;
+    color: #000;
     margin-left: 5%;
 }
 
 .lettercontent img{
-    width: 30%;
+    width: 55%;
+    height: 52%;
     position: absolute;
-    left: 68%;
+    left: 22.5%;
     top: 5%;
+}
+
+#lettertitle{
+    position: absolute;
+    width: 40vw;
+    left: 30vw;
+    display: flex;
+    top: 115%;
+    font-size: 160%;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
 }
 
 .cttecontent{
@@ -203,6 +214,29 @@ body{
     position: absolute;
     width: 100%;
     display: flex;
+}
+
+.burgerframe{
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 35vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.burgerframe button{
+    display: flex;
+    text-decoration: none;
+    text-align: left;
+    justify-content: left;
+    margin: 10px 5px;
+    font-weight: 300px;
+    background: none;
+    border: none;
 }
 
 @media (max-width: 768px){
@@ -265,7 +299,7 @@ body{
     }
 
     #dudeimg{
-        display: none;
+        display: flex;
     }
 
     .lettercontent{
