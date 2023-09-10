@@ -91,7 +91,11 @@ document.getElementById("mobilecb").addEventListener("click",function(){
 })
 
 document.getElementById("mobhb").addEventListener("click",function(){
-    opencommite(false);
+    hideunhidethecontent(false);
+    for (var i = 0; i < ctteclass.length; i++) {
+        ctteclass[i].style.display = "none";
+    };
+    opencontact(false);
     burgerclass.style.display = "none"
 })
 
@@ -110,7 +114,8 @@ document.getElementById("home").addEventListener("click",function(){
     hideunhidethecontent(false);
     for (var i = 0; i < ctteclass.length; i++) {
         ctteclass[i].style.display = "none";
-    }
+    };
+    opencontact(false)
 })
 
 document.getElementById("burgericon").addEventListener("click",function(){
