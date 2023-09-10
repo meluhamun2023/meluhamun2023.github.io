@@ -17,6 +17,7 @@ body{
 #logo{
     height: 90%;
     display: flex;
+    cursor: pointer;
     margin-left: 25vw;
 }
 
@@ -24,7 +25,7 @@ body{
     display: flex;
     width: 80vw;
     position: absolute;
-    left: 32.5vw;
+    left: 35vw;
     top: 12px;
     overflow-y: hidden;
     flex-direction: row;
@@ -55,7 +56,7 @@ body{
 
 .publicimg{
     width: 100vw;
-    height: 70vh;
+    height: 30vw;
     position: absolute;
     margin-top: 1vh;
     background-image: url("imgwebsite/backgroundhtml3.png");
@@ -100,10 +101,11 @@ body{
     height: 15vh;
     background-color: #dcdcdc;
     width: 100vw;
+    align-items: center;
     justify-content: center;
     position: absolute;
     display: flex;
-    top: 210%;
+    top: 105vw;
 }
 
 .bottombar h3{
@@ -118,21 +120,45 @@ body{
     justify-content: center;
 }
 
+#atitle{
+    width: 75vw;
+    position: absolute;
+    left: 12.5vw;
+    top: 35vw;
+    position: absolute;
+    height: 5vh;
+    font-size: 150%;
+    display: flex;
+}
+
+#ltitle{
+    width: 40vw;
+    position: absolute;
+    left: 31vw;
+    top: 50vw;
+    height: 5vh;
+    justify-content: center;
+    text-align: center;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+}
+
 .bottombar img{
     position: absolute;
-    left: 65%;
-    width: 170px;
-    height: 90%;
+    left: 60%;
+    width: 18vw;
+    display: flex;
+    height: 75%;
 }
 
 .contentinfohome{
-    width: 70vw;
+    width: 75vw;
     display: flex;
     position: absolute;
-    flex-direction: column;
-    top: 82%;
-    left: 15%;
-    height: 25vh;
+    top: 38vw;
+    left: 12.5%;
+    height: 10vw;
     display: flex;
     margin-bottom: 15vh;
 }
@@ -155,62 +181,29 @@ body{
 
 .lettercontent{
     width: 85vw;
-    height: 100vh;
-    top: 125vh;
-    overflow-y: scroll;
+    height: 50vw;
+    top: 55vw;
     left: 7.5%;
     background: none;
     display: flex;
     position: absolute;
 }
 
-.lettercontent h3{
+.lettercontent p{
     width: 100%;
     display: flex;
+    height: 60%;
+    top: 24vw;
+    position: absolute;
     color: #000;
 }
 
 .lettercontent img{
-    width: 55%;
-    height: 52%;
+    width: 35vw;
+    height: 22vw;
     position: absolute;
-    left: 22.5%;
-    top: 5%;
-}
-
-#lettertitle{
-    position: absolute;
-    width: 40vw;
-    left: 30vw;
-    display: flex;
-    top: 115%;
-    font-size: 160%;
-    justify-content: center;
-    height: 20%;
-    text-align: center;
-}
-
-.cttecontent{
-    display: block;
-    width: 40vw;
-    height: 115%;
-    margin: 0px;
-    margin-left: 30vw;
-    margin-top: 2%;
-    padding: 0px;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: none;
-}
-
-.cttecontent img{
-    height: 100%;
-    margin-top: 0px;
-    position: absolute;
-    width: 100%;
-    display: flex;
+    left: 31%;
+    top: 0% ;
 }
 
 #burgericon{
@@ -248,15 +241,112 @@ body{
     border: none;
 }
 
+.coml{
+    position: absolute;
+    flex-direction: column;
+    width: 60vw;
+    left: 20vw;
+    height: 50vw;
+    align-items: flex-start;
+    display: none;
+    height: 50vw;
+    top: 12vw;
+}
+
+.listc{
+    width: 60vw;
+    margin: 4px auto;
+    height: 5vw;
+    background-color: #dcdcdc;
+    display: flex;
+    border-radius: 6px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.listc a{
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #000;
+}
+
+#ctitle{
+    width: 50vw;
+    left: 25vw;
+    position: absolute;
+    top: 5vw;
+    height: 3vw;
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+#cdesc{
+    width: 50vw;
+    left: 25vw;
+    position: absolute;
+    top: 8vw;
+    opacity: 0.5;
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactinfo{
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 18vw;
+    position: absolute;
+    left: 41vw;
+    top: 5vw;
+}
+
+.kidname{
+    width: 18vw;
+    height: 23vw;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.kidname img{
+    width: 100%;
+    height: 80%;
+    border-radius: 6px;
+}
+
+.kidname h3{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    margin-top: 5px;
+}
+
+#insta{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 2px;
+}
+
+#phonenumber{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 2px;
+}
+
 @media (max-width: 768px){
     *{
         overflow-x: hidden;
-    }
-
-    .cttecontent{
-        width: 90vw;
-        height: 73.5vh;
-        margin-left: 5vw;
     }
     .topcontainer{
         width: 100vw;
@@ -278,6 +368,7 @@ body{
 
     .burgerframe{
         margin: 0;
+        z-index: 1000;
         justify-content: center;
     }
 
@@ -287,6 +378,105 @@ body{
 
     #burgericon{
         display: flex;
+    }
+
+    .contactinfo{
+        display: none;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 50vw;
+        position: absolute;
+        left: 25vw;
+        top: 5vw;
+    }
+
+    .kidname{
+        width: 100%;
+        height: 75vw;
+        overflow-x: hidden;
+        margin-top: 30px;
+    }
+
+    .kidname img{
+        height: 70%;
+    }
+
+    .kidname h3{
+        width: 100%;
+        text-align: center;
+        height: 10%;
+        justify-content: center;
+        display: flex;
+        margin: 0;
+        margin-top: 1px;
+        font-size: 100%;
+        padding: 0;
+    }
+    
+    #insta{
+        width: 100%;
+        display: flex;
+        height: 7%;
+        font-size: 100%;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #phonenumber{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .coml{
+        position: absolute;
+        flex-direction: column;
+        width: 80vw;
+        left: 10vw;
+        height: 200vw;
+        align-items: flex-start;
+        display: none;
+        top: 38vw;
+    }
+
+    .listc{
+        width: 80vw;
+        margin: 10px auto;
+        height: 15vw;
+        background-color: #dcdcdc;
+        display: flex;
+        border-radius: 6px;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    #ctitle{
+        width: 80vw;
+        position: absolute;
+        left: 10vw;
+        top: 10vw;
+        height: 8vw;
+        display: none;
+        justify-content: center;
+        z-index: 100;
+        text-align: center;
+    }
+    
+    #cdesc{
+        width: 85vw;
+        left: 7.5vw;
+        position: absolute;
+        top: 13vh;
+        font-size: 100%;
+        opacity: 0.5;
+        display: none;
+        justify-content: center;
+        text-align: center;
     }
 
     .bottombar{
