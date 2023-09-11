@@ -3,31 +3,34 @@ body{
     padding: 0;
     font-family: "Fira Sans",sans-serif;
     overflow-x: hidden;
+    height: 100%;
 }
 
 .topcontainer{
     width: 100vw;
-    height: 8vh;
-    align-items: center;
-    justify-content: center;
+    height: 3.5vw;
     overflow: hidden;
-    margin-top: 5px;
+    position: sticky;
+    z-index: 10000;
+    top: 5%;
 }
 
 #logo{
-    height: 90%;
+    height: 50px;
+    width: 50px;
     display: flex;
     cursor: pointer;
-    margin-left: 25vw;
+    margin-left: 8vw;
+    align-items: center;
 }
 
 .buttonlist{
     display: flex;
-    width: 80vw;
+    width: 75vw;
+    left: 25vw;
+    top: 0.5vh;
+    height: 80%;
     position: absolute;
-    left: 35vw;
-    top: 12px;
-    overflow-y: hidden;
     flex-direction: row;
 }
 
@@ -35,66 +38,109 @@ body{
     text-decoration: none;
     border: none;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 110%;
+    display: flex;
+    background: none;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin: 0 10px;
+    width: auto;
+    transition: 0.5s;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #000;
+}
+
+.buttonlist a{
+    text-decoration: none;
+    border: none;
+    transition: 0.3s;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     justify-content: center;
     font-size: 115%;
     display: flex;
     background: none;
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 15px;
     margin: 0 10px;
-    width: 110px;
+    color: #000;
+    width: auto;
     transition: 0.5s;
     text-decoration-thickness: 2px;
     text-decoration-color: #000;
 }
 
 .buttonlist button:hover{
-    text-decoration: underline;
-    font-size: 130%;
+    font-size: 120%;
+    opacity: 0.5;
+}
+
+.buttonlist a:hover{
+    font-size: 120%;
+    opacity: 0.5;
+}
+
+#mmuntitle{
+    position: absolute;
+    display: flex;
+    z-index: 100;
+    top: 6px;
+    justify-content: left;
+    height: 40px;
+    margin: 0;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    left: 12vw;
 }
 
 .publicimg{
     width: 100vw;
-    height: 30vw;
+    height: 32.5vw;
+    margin-top: 0;
     position: absolute;
-    margin-top: 1vh;
-    background-image: url("imgwebsite/backgroundhtml3.png");
+    background-image: url("imgwebsite/background1.png");
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; 
     justify-content: center;
     display: flex;
-    box-shadow: 1px 2px 4px #000;
 }
 
 .publicimg h1{
     color: #fff;
-    font-size: 80px;
-    width: 50vw;
+    font-size: 100px;
+    width: 58vw;
+    border-bottom: 15px solid yellow;
     position: absolute;
-    left: 25%;
+    left: 21vw;
     text-align: center;
+    display: flex;
     justify-content: center;
     top: 18%;
 }
 
-.publicimg h2{
-    color: #fff;
-    display: flex;
-}
-
 #toptext{
-    position: absolute;
-    top: 10%;
-    display: flex;
-    font-size: 170%;
+    font-size: 140%;
+    margin-top: 10vh;
+    color: #fff;
 }
 
 #bottomtext{
-    position: absolute;
+    font-size: 130%;
+    margin-top: 45vh;
+    width: 30vw;
+    justify-content: center;
     display: flex;
-    top: 55%;
-    font-size: 180%;
+    left: 35vw;
+    position: absolute;
+    color: #fff;
 }
 
 .bottombar{
@@ -120,90 +166,98 @@ body{
     justify-content: center;
 }
 
-#atitle{
-    width: 75vw;
-    position: absolute;
-    left: 12.5vw;
-    top: 35vw;
-    position: absolute;
-    height: 5vh;
-    font-size: 150%;
-    display: flex;
-}
-
 #ltitle{
-    width: 40vw;
-    position: absolute;
-    left: 31vw;
-    top: 50vw;
-    height: 5vh;
-    justify-content: center;
-    text-align: center;
-    font-size: 150%;
-    display: flex;
-    align-items: center;
-}
-
-.bottombar img{
-    position: absolute;
-    left: 60%;
-    width: 18vw;
-    display: flex;
-    height: 75%;
-}
-
-.contentinfohome{
-    width: 75vw;
-    display: flex;
-    position: absolute;
-    top: 38vw;
-    left: 12.5%;
+    font-family: Arial, Helvetica, sans-serif;
     height: 10vw;
-    display: flex;
-    margin-bottom: 15vh;
+    margin-left: 12.5vw;
+    display: none;
+    justify-content: center;
+    width: 60vw;
+    font-weight: bold;
+    font-size: 250%;
 }
 
-.contentinfohome h2{
-    width: 100%;
+#atitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20vw;
+    margin-left: 12.5vw;
+    display: flex;
+    width: 40vw;
+    margin-top: 30px;
+    justify-content: center;
+    font-size: 250%;
+    font-weight: bolder;
+}
+
+.contentpage{
+    height: auto;
+    width: 100vw;
+    position: absolute;
+    top: 36vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+#aboutcontent{
+    display: none;
+}
+
+#home{
+    background-color: black;
+    color: #fff;
+}
+
+#dudeimg{
+    display: flex;
+    width: 34vw;
+    margin-top: 30px;
+    height: 20vw;
+}
+
+#lettertext{
+    display: block;
+    position: absolute;
+    width: 75%;
+    margin: 0;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 12.5vw;
+    margin-top: 26vw;
+    justify-content: left;
+    font-size: 19px;
+}
+
+#contactmail{
+    display: flex;
+    margin-top: 64vw;
+    width: 25vw;
+    position: absolute;
+    height: 10vw;
+    font-size: 100%;
+    opacity: 0.9;
+    left: 20vw;
     text-align: center;
-    display: flex;
-    font-size: 150%;
-    height: 20%;
 }
 
-.contentinfohome h3{
-    position: absolute;
-    font-weight: 5px;
-    top: 20%;
-    font-size: 130%;
+#mlogo{
     display: flex;
+    margin-top: 63vw;
+    width: 15vw;
+    position: absolute;
+    height: 4.5vw;
+    font-size: 100%;
+    opacity: 0.9;
+    left: 68vw;
+    text-align: center;  
 }
 
-.lettercontent{
-    width: 85vw;
-    height: 50vw;
-    top: 55vw;
-    left: 7.5%;
-    background: none;
+#gmap{
     display: flex;
     position: absolute;
-}
-
-.lettercontent p{
-    width: 100%;
-    display: flex;
-    height: 60%;
-    top: 24vw;
-    position: absolute;
-    color: #000;
-}
-
-.lettercontent img{
-    width: 35vw;
-    height: 22vw;
-    position: absolute;
-    left: 31%;
-    top: 0% ;
+    width: 70vw;
+    height: 30vw;
+    left: 15vw;
+    top: 72vw;
 }
 
 #burgericon{
@@ -222,6 +276,7 @@ body{
     height: 35vh;
     justify-content: center;
     transition: 0.2s;
+    right: 100%;
     align-items: center;
     z-index: 10;
     position: absolute;
@@ -232,6 +287,7 @@ body{
 .burgerframe button{
     display: flex;
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
     justify-content: left;
     margin: 10px 5px;
@@ -368,12 +424,12 @@ body{
 
     .burgerframe{
         margin: 0;
-        z-index: 1000;
+        width: 75vw;
+        left: 0%;
+        height: 90vh;
+        background-color: yellow;
+        z-index: 100;
         justify-content: center;
-    }
-
-    .buttonlist{
-        display: none;
     }
 
     #burgericon{
@@ -436,7 +492,7 @@ body{
     .coml{
         position: absolute;
         flex-direction: column;
-        width: 80vw;
+        width: 75vw;
         left: 10vw;
         height: 200vw;
         align-items: flex-start;
@@ -478,98 +534,6 @@ body{
         justify-content: center;
         text-align: center;
     }
-
-    .bottombar{
-        top: 210vh;
-        position: absolute;
-    }
-
-    .publicimg{
-        width: 100vw;
-        height: 100vw;
-    }
-    .publicimg h1{
-        width: 80vw;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        height: 80vw;
-        left: 10%;
-    }
-    #toptext{
-        width: 80vw;
-        left: 10%;
-        top: 15vw;
-        font-size: 150%;
-        text-align: center;
-        justify-content: center;
-        position: absolute;
-    }
-
-    #dudeimg{
-        display: flex;
-    }
-
-    .lettercontent h3{
-        width: 100%;
-    }
-
-    .bottombar{
-        width: 100vw;
-        align-items: center;
-    }
-
-    .bottombar h3{
-        left: 5%;
-        width: 40%;
-        font-size: 100%;
-        text-align: left;
-        overflow-x: scroll;
-        justify-content: left;
-    }
-
-    .bottombar img{
-        width: 40vw;
-        left: 58%;
-        height: 12vw;
-    }
-
-    .contentinfohome{
-        top: 125vw;
-        height: 110vw;
-        width: 85vw;
-        left: 7.5%;
-    }
-
-    .contentinfohome p{
-        width: 100%;
-        height: 100%;
-    }
-
-    .lettercontent{
-        width: 85vw;
-        left: 7.5vw;
-        height: 160vw;
-        top: 235vw;
-    }
-
-    .lettercontent img{
-        width: 100%;
-        left: 0;
-        height: 52.25vw;
-        border-radius: 6px;
-    }
-
-    .lettercontent p{
-        width: 100%;
-        position: absolute;
-        height: 45.75%;
-        font-size: 100%;
-        top: 62.25vw;
-        bottom: 0%;
-        margin: 0;
-    }
-
     #toptext{
         width: 80vw;
         left: 10vw;
