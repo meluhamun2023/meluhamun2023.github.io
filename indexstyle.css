@@ -135,6 +135,10 @@ body{
     }
 
     #ow{
+        display: none;
+    }
+
+    #dga{
         margin-top: 45%;
     }
 
