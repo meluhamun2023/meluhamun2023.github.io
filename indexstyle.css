@@ -25,6 +25,9 @@ body{
     transform: translateX(-50%);
 }
 
+#ow{
+    display: none;
+}
 #heading{
     position: absolute;
     width: 50vw;
@@ -48,8 +51,8 @@ body{
     display: flex;
     flex-direction: column;
 }
-#ow{
-    margin-top: 65%;
+#dga{
+    margin-top: 45%;
 }
 .buttonlist button{
     display: flex;
