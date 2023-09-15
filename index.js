@@ -1,5 +1,5 @@
 const dgabutton = document.getElementById("dga");
-const alb = document.getElementById("atr");
+const alb = document.getElementById("al");
 const pja = document.getElementById("pja");
 
 const gba = document.getElementById("ipa");
@@ -25,7 +25,7 @@ async function getdatastatus(){
 }
 
 alb.addEventListener('click',function(){
-    window.location.href = "Allocationhtml.html";
+    window.location.href = "https://docs.google.com/spreadsheets/d/1ootCC14fDEFPTT88SsxbERaWfkXVTmhGYvCka864Bgo/edit?usp=sharing";
 });
 
 dgabutton.addEventListener("click",async function(){
